@@ -2,36 +2,117 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Arial, Helvetica, sans-serif;
+
 }
 
-header{
-    height:5vh;
-    background: #f3f3f3;
-    padding: 0;
-    margin-top:0;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    
+header {
+  height: 5vh;
+  background: #f3f3f3;
+  padding: 0;
+  margin-top: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+
 }
 
-.invite{
-   font-size: 13pt;
-   
+.invite {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 12pt;
+  color: rgb(78, 77, 77);
+  font-weight: 500;
+  letter-spacing: 1px;
+
+
 }
-.invite>a{
-  text-decoration:none ;
-  color: rgb(4, 112, 137); 
+
+.invite>a {
+  text-decoration: none;
+  color: rgb(14, 115, 138);
+
 }
-.logo_wrapper{
-  width:50pt;
+
+.logo_wrapper {
+  width: 50pt;
   height: auto;
-  padding:0.7em;
+  padding-left: 0.7em;
+  padding-bottom: 0.7em;
+  padding-top: 0.7em;
 }
-.logo{
-  width: 2.5vw;
+
+.logo {
+  width: 2.5em;
   height: auto;
+
+
+}
+
+.search_bar {
+  width: 85%;
+  height: 2.8em;
+  border-radius: 15em;
+  background: #c6c5c5;
+  border: 0;
+  text-indent:3em;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:550;
+
+}
+
+.search_bar::placeholder {
+  color: rgb(122, 120, 120);
   
 }
 
+nav {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+nav>a {
+  text-decoration: none;
+  margin-left: -1.5em;
+  padding: 0;
+  font-size: 10pt;
+  color: gray;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+
+.nav_bar {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2em;
+}
+
+.nav_bar a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.nav_lable a {
+  text-decoration: none;
+  padding: 0;
+  font-size: 13pt;
+  color: gray;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 450;
+}
+
+.icon {
+  width: 2vw;
+  padding: 0;
+  filter: sepia(100%) hue-rotate(200deg) saturate(50%)
+}
