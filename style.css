@@ -9,10 +9,20 @@ header{
     background: #f3f3f3;
     padding: 0;
     margin-top:0;
+    display: grid;
+    place-items: center;
     text-align: center;
+    
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.invite{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 13pt;
+   
+}
+.invite>a{
+  text-decoration:none ;
+  color: rgb(4, 112, 137);
+ 
+  
 }
