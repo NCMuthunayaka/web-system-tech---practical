@@ -53,16 +53,16 @@ header {
   border-radius: 15em;
   background: #c6c5c5;
   border: 0;
-  text-indent:3em;
+  text-indent: 3em;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
-  font-weight:550;
+  font-weight: 550;
 
 }
 
 .search_bar::placeholder {
   color: rgb(122, 120, 120);
-  
+
 }
 
 nav {
@@ -76,6 +76,7 @@ nav {
 }
 
 nav>a {
+  position: relative;
   text-decoration: none;
   margin-left: -1.5em;
   padding: 0;
@@ -89,7 +90,6 @@ nav>a {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(7, auto);
-  gap: 2em;
   align-items: center;
   justify-content: center;
   padding-right: 2em;
@@ -104,15 +104,43 @@ nav>a {
 
 .nav_lable a {
   text-decoration: none;
-  padding: 0;
+  padding: 0.7em 0.5em;
   font-size: 13pt;
   color: gray;
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-weight: 450;
+  margin: 0;
+
 }
 
 .icon {
   width: 2vw;
   padding: 0;
-  filter: sepia(100%) hue-rotate(200deg) saturate(50%)
+  filter: sepia(100%) hue-rotate(200deg) saturate(50%) padding 0;
 }
+
+.nav_lable {
+  position: relative;
+  display: inline-block;
+}
+
+.nav_lable::before {
+  content: '';
+  transform: scale(0);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: #f3f3f3;
+  display: inline-block;
+  border-radius: 30px;
+
+
+}
+
+.nav_lable:hover::before {
+  transform: scale(1);
+}
+
