@@ -9,32 +9,151 @@
 <body>
     <header>
         <p class="invite"> Join us for React Conf on Oct 7-8.
-            <a href="https://conf.react.dev/" target="_blank">Learn more.</a></p>
+            <a href="https://conf.react.dev/" target="_blank">Learn more.</a>
+        </p>
     </header>
 
     <!-- navigation bar -->
 
-    <nav>
+    <nav class="top_nav">
         <div class="logo_wrapper">
-        <img src="img/logo_light.svg" alt="logo" class="logo">
+            <img src="img/logo_light.svg" alt="logo" class="logo">
         </div>
-        <a href="https://react.dev/versions " target="_self" >v19.1</a>
+        <a href="https://react.dev/versions " target="_self">v19.1</a>
         <div class="search-container">
-            <input type="txt" placeholder= "Search" class="search_bar">
+            <input type="txt" placeholder="Search" class="search_bar">
         </div>
         <ul class="nav_bar">
-            <li class="nav_lable" ><a href="http://127.0.0.1:5500/web-system-tech---practical/index.html">Learn</a></li>
+            <li class="nav_lable"><a href="http://127.0.0.1:5500/web-system-tech---practical/index.html">Learn</a></li>
             <li class="nav_lable"><a href="">Reference</a> </li>
             <li class="nav_lable"><a href="">Community</a> </li>
             <li class="nav_lable"><a href=""> Blog</a> </li>
             <li class="nav_lable"><a href=""><img src="img/Dark mode.svg" class="icon"></a></li>
-            <li class="nav_lable"><a href=""><img src="img/translation-foreign-language-computer-icons-english-speaking-bf703cce9650a5b1f3683443cd1f8442.png" class="icon"></a> </li>
-            <li class="nav_lable"><a href=""><img src="img/github-logo-repository-computer-icons-github-4f62259da03e1590b862793c9af5b446.png" class="icon"></a></li>
-       
+            <li class="nav_lable"><a href=""><img
+                        src="img/translation-foreign-language-computer-icons-english-speaking-bf703cce9650a5b1f3683443cd1f8442.png"
+                        class="icon"></a> </li>
+            <li class="nav_lable"><a href=""><img
+                        src="img/github-logo-repository-computer-icons-github-4f62259da03e1590b862793c9af5b446.png"
+                        class="icon"></a></li>
+
         </ul>
-        
+
 
     </nav>
+
+
+
+    <!-- main body element -->
+    <div class="main_body">
+        <div class="content">
+            <nav>
+                <ul class="left_nav">
+                    <div class="section-title">GET STARTED</div>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">Quick Start</button>
+                        <div class="dropdown-content">
+                            <a href="#">Tutorial: Tic-Tac-Toe</a>
+                            <a href="#">Thinking in React</a>
+                        </div>
+                    </li>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">Installation</button>
+                        <div class="dropdown-content">
+                            <a href="#">Creating a React App</a>
+                            <a href="#">Build a React App from Scratch</a>
+                            <a href="#">Add React to Existing Project</a>
+                        </div>
+                    </li>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">Setup</button>
+                        <div class="dropdown-content">
+                            <a href="#">Editor Setup</a>
+                            <a href="#">Using TypeScript</a>
+                            <a href="#">React Developer Tools</a>
+                        </div>
+                    </li>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">React Compiler</button>
+                        <div class="dropdown-content">
+                            <a href="#">Introduction</a>
+                            <a href="#">Incremental Application</a>
+                            <a href="#">Debugging and Troubleshooting</a>
+                        </div>
+                    </li>
+
+                    <hr>
+
+                    <div class="section-title">LEARN REACT</div>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">Describing the UI</button>
+                        <div class="dropdown-content">
+                            <a href="#">Your First Component</a>
+                            <a href="#">Importing and Exporting Components</a>
+                            <a href="#">Writing Markup with JSX</a>
+                            <a href="#">JavaScript in JSX with Curly Braces</a>
+                            <a href="#">Passing Props to a Component</a>
+                            <a href="#">Conditional Rendering</a>
+                            <a href="#">Rendering Lists</a>
+                            <a href="#">Keeping Components Pure</a>
+                            <a href="#">Your UI as a Tree</a>
+                        </div>
+                    </li>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">Adding Interactivity</button>
+                        <div class="dropdown-content">
+                            <a href="#">Responding to Events</a>
+                            <a href="#">State: A Component's Memory</a>
+                            <a href="#">Render and Commit</a>
+                            <a href="#">State as a Snapshot</a>
+                            <a href="#">Queueing a Series of State Updates</a>
+                            <a href="#">Updating Objects in State</a>
+                            <a href="#">Updating Arrays in State</a>
+                        </div>
+                    </li>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">Managing State</button>
+                        <div class="dropdown-content">
+                            <a href="#">Reacting to Input with State</a>
+                            <a href="#">Choosing the State Structure</a>
+                            <a href="#">Sharing State Between Components</a>
+                            <a href="#">Preserving and Resetting State</a>
+                            <a href="#">Extracting State Logic into a Reducer</a>
+                            <a href="#">Passing Data Deeply with Context</a>
+                            <a href="#">Scaling Up with Reducer and Context</a>
+                        </div>
+                    </li>
+
+                    <li class="custom-dropdown">
+                        <button class="dropdown-trigger">Escape Hatches</button>
+                        <div class="dropdown-content">
+                            <a href="#">Referring Values with Refs</a>
+                            <a href="#">Manipulating the DOM with Refs</a>
+                            <a href="#">Synchronizing with Effects</a>
+                            <a href="#">You Might Not Need An Effect</a>
+                            <a href="#">Lifecycle Of Reactive Effects</a>
+                            <a href="#">Separating Events From Effects</a>
+                            <a href="#">Removing Effect Dependencies</a>
+                            <a href="#">Reusing Effect Dependencies</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="page_content">
+            
+        </div>
+        <div class="navigation"></div>
+    </div>
+
+
 
 </body>
 
